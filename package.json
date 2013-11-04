@@ -1,0 +1,11 @@
+{
+    "name": "pigeon-proxy",
+    "version": "0.0.1",
+    "author": {
+        "name": "Brenton Morris",
+        "email": "brenton.smorris@gmail.com"
+    },
+    "dependencies": {
+        "http-proxy": ""
+    }
+}
