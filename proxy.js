@@ -20,9 +20,12 @@ http.createServer(function (req, res) {
 		targetPort = 8080;
 	}
 
-	proxy.proxyRequest(req, res, {
-		host: 'localhost',
-		port: targetPort
-	});
+	// route to the correct server
+	if (targetPort != 0) {
+		proxy.proxyRequest(req, res, {
+			host: targetHost,
+			port: targetPort
+		});
+	}
 
 }).listen(80);
